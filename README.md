@@ -66,7 +66,7 @@ Linux 安装了 `v4l-utils` 和 FFmpeg 后，可以先找出设备编号，再�
 ```bash
 v4l2-ctl --list-devices
 v4l2-ctl -d /dev/video0 --list-formats-ext
-ffplay -fflags nobuffer -flags low_delay -f v4l2 -input_format mjpeg -video_size 640x480 -framerate 30 /dev/video0
+ffplay -fflags nobuffer -flags low_delay -f v4l2 -input_format mjpeg -video_size 800x600 -framerate 30 /dev/video0
 ```
 
 将 `/dev/video0` 替换为本开发板对应的视频节点；部分系统还会为同一摄像头建立
